@@ -1,5 +1,14 @@
+{"1.1.0",
 [{<<"calendar_ext">>,
   {git,"https://bitbucket.org/a12n/calendar_ext.git",
        {ref,"2ff0eea2bf9994668626cad7a9aa078917ce4664"}},
   0},
- {<<"jsx">>,{pkg,<<"jsx">>,<<"2.8.0">>},0}].
+ {<<"jsx">>,{pkg,<<"jsx">>,<<"2.8.0">>},0},
+ {<<"rfc3339">>,
+  {git,"https://github.com/a12n/erl-rfc3339.git",
+       {ref,"eab1f3338e9ed785b19867d1803a6a546974d3f4"}},
+  0}]}.
+[
+{pkg_hash,[
+ {<<"jsx">>, <<"749BEC6D205C694AE1786D62CEA6CC45A390437E24835FD16D12D74F07097727">>}]}
+].

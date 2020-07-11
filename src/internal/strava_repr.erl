@@ -478,7 +478,7 @@ to_club_type(Text)
 -spec to_datetime(binary()) -> calendar:datetime().
 
 to_datetime(Text) ->
-    {ok, Ans} = iso8601:parse_datetime(Text), Ans.
+    {Ans, _} = rfc3339:parse_datetime(Text), Ans.
 
 %%--------------------------------------------------------------------
 %% @doc
@@ -862,7 +862,7 @@ from_athlete_sex(female) -> <<"F">>.
 -spec from_datetime(calendar:datetime()) -> binary().
 
 from_datetime(DateTime) ->
-    iolist_to_binary(iso8601:format_datetime(DateTime)).
+    iolist_to_binary(rfc3339:format_datetime(DateTime)).
 
 %%--------------------------------------------------------------------
 %% @doc
